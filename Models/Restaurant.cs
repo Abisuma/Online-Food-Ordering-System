@@ -14,10 +14,11 @@ namespace Models
         public string Name { get; set; }    
         public string Address { get; set; } 
         public string PhoneNumber { get; set; }
-        [Required]
-        [WebsiteUrlValidation]
+        public double? Rating { get; set; }    
+        
         public string Website { get; set; }  
         
-        public List<Menu> Menu { get; set; }
+        public List<Menu>? Menu { get; set; }
+        //public object Orders { get; set; }
     }
 }
